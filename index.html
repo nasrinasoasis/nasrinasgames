@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nasrina's Oasis Games ✨</title>
+    <style>
+        :root {
+            --bg-gradient-start: #F2FFF5; /* Soft light mint hint */
+            --bg-gradient-end: #FFE3EC; /* Dreamy soft pink */
+            --text-pink: #FF5E97;
+            --text-dark: #664E56;
+            --card-bg: rgba(255, 255, 255, 0.75);
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Georgia', serif; /* Matching your elegant website font vibe */
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            color: var(--text-dark);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: var(--text-pink);
+            font-style: italic;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+        }
+
+        .flower-emojis {
+            font-size: 20px;
+            letter-spacing: 5px;
+            margin-top: 5px;
+        }
+
+        .main-layout {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            max-width: 1000px;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        /* Left Side Profile Layout to mimic your site */
+        .profile-side {
+            flex: 1;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 60px; /* Matching your curved image style */
+            box-shadow: 0 10px 30px rgba(255, 94, 151, 0.1);
+            background-color: var(--white);
+        }
+
+        /* Right Side Games List */
+        .games-side {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .game-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 20px rgba(255, 94, 151, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 94, 151, 0.1);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .game-title {
+            font-size: 22px;
+            color: var(--text-pink);
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .description-box {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            color: var(--text-dark);
+        }
+
+        .btn-play {
+            display: inline-block;
+            background: var(--white);
+            color: var(--text-pink);
+            text-decoration: none;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 14px;
+            border: 1.5px solid var(--text-pink);
+            transition: all 0.2s;
+        }
+
+        .btn-play:hover {
+            background: var(--text-pink);
+            color: var(--white);
+        }
+
+        /* Responsive configuration for mobile view */
+        @media (max-width: 768px) {
+            .main-layout {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-side {
+                max-width: 280px;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-section">
+    <h1>Welcome to Nasrina's Oasis Games.</h1>
+    <div class="flower-emojis">🌸 🌿 🌷 🍃 🌸</div>
+</div>
+
+<div class="main-layout">
+
+    <div class="profile-side">
+        <img src="https://nasrinasoasis.com/wp-content/uploads/2024/02/nasrina.jpg" alt="Nasrina" class="profile-img" onerror="this.style.display='none'">
+    </div>
+
+    <div class="games-side">
+
+        <div class="game-card">
+            <div class="game-title">Dreamy Affirmation Generator</div>
+            <div class="description-box">
+                Need a little boost or a reminder of how amazing you are? Step into the Dreamy Affirmation Generator to receive sweet, uplifting daily reminders crafted to build your confidence and brighten your spirit.
+            </div>
+            <a href="https://nasrinasoasis.github.io/garden/" target="_blank" class="btn-play">Play Now ✨</a>
+        </div>
+
+        <div class="game-card">
+            <div class="game-title">Nasrina's Self Care Garden</div>
+            <div class="description-box">
+                Take a deep breath and dedicate some time to your routine. This cozy mini-game helps you romanticize your self-care and daily habits, proving that making time for yourself is the ultimate glow-up.
+            </div>
+            <a href="https://nasrinasoasis.github.io/nasrina-s-garden-game/" target="_blank" class="btn-play">Play Now 🌸</a>
+        </div>
+
+        <div class="game-card">
+            <div class="game-title">Garden of Growth</div>
+            <div class="description-box">
+                Nurture your goals and watch them bloom! Plant seeds of positivity, track your daily routines, and grow a beautiful, magical garden that reflects your personal growth and confidence journey.
+            </div>
+            <a href="https://garden-of-growth--nasrinasoasis.replit.app/" target="_blank" class="btn-play">Play Now 🌿</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
